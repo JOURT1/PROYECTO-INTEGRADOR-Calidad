@@ -4,13 +4,12 @@
 
 | Rol | Responsable | Responsabilidad principal |
 | --- | --- | --- |
-| Lider del equipo | Integrante 1 | Coordinar tareas, revisar integracion final y validar entregables. |
-| Responsable de analisis de metricas | Integrante 2 | Definir metricas, revisar cobertura JaCoCo y resultados del pipeline. |
-| Responsable de revision manual | Integrante 3 | Aplicar Clean Code, revisar nombres, cohesion y responsabilidades. |
-| Responsable de analisis estatico | Integrante 4 | Configurar Checkstyle, PMD, SpotBugs y GitHub Actions. |
-| Responsable de documentacion | Integrante 5 | Consolidar evidencias, comparativa antes/despues y reflexiones. |
+| Lider del equipo | Jhoel Suárez | Coordinar tareas, revisar integracion final y validar entregables. |
+| Responsable de analisis de metricas | Justin Gomezcoello | Definir metricas, revisar cobertura JaCoCo y resultados del pipeline. |
+| Responsable de revision manual | Stefan Játiva | Aplicar Clean Code, revisar nombres, cohesion y responsabilidades. |
+| Responsable de analisis estatico | Mauricio Mora | Configurar Checkstyle, PMD, SpotBugs y GitHub Actions. |
 
-> Nota: reemplazar "Integrante 1-5" por los nombres reales del grupo antes de generar el PDF final.
+La documentacion fue consolidada de forma grupal a partir de los resultados tecnicos, la comparativa antes/despues y las evidencias del pipeline.
 
 ## 2. Problemas de calidad identificados
 
@@ -35,6 +34,7 @@ El codigo base se encuentra en `docs/proyecto-base/StudentManager.java`. Durante
 - Separar formato de salida en `StudentFormatter`.
 - Mantener `StudentApplication` como punto de entrada minimo.
 - Automatizar validacion con Maven y GitHub Actions.
+- Usar Checkstyle como herramienta de estilo y analisis estatico en lugar de SonarQube, ya que el enunciado permite configurar herramientas como "SonarQube o Checkstyle".
 
 ## 4. Metricas y herramientas
 
@@ -46,6 +46,8 @@ El codigo base se encuentra en `docs/proyecto-base/StudentManager.java`. Durante
 | PMD | Defectos y mantenibilidad | 0 violaciones bloqueantes. |
 | SpotBugs | Bugs potenciales | 0 errores o advertencias. |
 | GitHub Actions | CI/CD | Ejecutar `mvn clean verify` en cada push o pull request. |
+
+Checkstyle cubre la opcion de analisis estatico indicada como alternativa a SonarQube. PMD y SpotBugs complementan la deteccion de defectos y posibles bugs.
 
 ## 5. Objetivo de cumplimiento
 

@@ -14,6 +14,7 @@ El repositorio contiene cambios separados para evidenciar el proceso de trabajo:
 - `Implement quality student registry project`: implementacion inicial del proyecto Java, pruebas, herramientas de calidad y CI/CD.
 - `Add quality analysis documentation`: evidencia de analisis inicial, plan de accion e informe final base.
 - `Add delivery evidence summary`: evidencia de repositorio, pipeline, comandos y reportes.
+- `Assign real team roles`: asignacion real de integrantes y aclaracion de herramientas usadas.
 
 ## Pipeline CI/CD
 
@@ -46,6 +47,19 @@ Resultados observados:
 - SpotBugs: 0 bugs, 0 errores.
 - JaCoCo: cobertura validada con umbral minimo del 80%.
 
+## Roles del equipo
+
+| Rol | Responsable |
+| --- | --- |
+| Lider del equipo | Jhoel Suárez |
+| Responsable de analisis de metricas | Justin Gomezcoello |
+| Responsable de revision manual | Stefan Játiva |
+| Responsable de analisis estatico | Mauricio Mora |
+
+## Herramientas usadas
+
+El enunciado menciona herramientas como SonarQube o Checkstyle para analisis estatico. En este proyecto se eligio Checkstyle porque esta permitido por la consigna y se integra directamente con Maven y GitHub Actions. Ademas, se configuraron PMD y SpotBugs para fortalecer el analisis de defectos.
+
 ## Reportes generados
 
 Los reportes locales se generan en:
@@ -71,9 +85,11 @@ En GitHub Actions, estos reportes se publican como artifact `quality-reports`.
 | Checkstyle | Cumplido. |
 | PMD | Cumplido. |
 | SpotBugs | Cumplido como herramienta adicional de reporte. |
+| SonarQube o Checkstyle | Cumplido usando Checkstyle como alternativa aceptada por la consigna. |
 | GitHub Actions CI/CD | Cumplido. |
 | Reportes generados | Cumplido localmente y como artifact de CI. |
 | Plan de accion | Fuente editable incluida en `docs/plan-accion.md`. |
 | Informe final | Fuente editable incluida en `docs/informe-final.md`. |
 | PDF y PPT | Pendiente de convertir/preparar por el grupo segun indicacion del estudiante. |
-| Nombres reales y evidencias de reuniones | Pendiente de completar por el grupo con informacion real. |
+| Nombres reales de integrantes | Cumplido en `docs/plan-accion.md` y este documento. |
+| Evidencias de reuniones | Pendiente de completar por el grupo con informacion real. |
