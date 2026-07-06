@@ -73,3 +73,12 @@ Despues de ejecutar `mvn clean verify`, Maven genera reportes en:
 - `target/surefire-reports/`
 
 Estos reportes tambien se publican como artifacts en GitHub Actions.
+
+## Documentacion de entrega
+
+La carpeta `docs/` contiene material fuente para los documentos solicitados:
+
+- `docs/plan-accion.md`: roles, problemas identificados, estrategias y metricas.
+- `docs/informe-final.md`: proceso de implementacion, comparativa antes/despues y reflexion.
+- `docs/evidencia-entrega.md`: URL del repositorio, pipeline, comandos y reportes.
+- `docs/proyecto-base/StudentManager.java`: codigo inicial usado para la comparativa.
